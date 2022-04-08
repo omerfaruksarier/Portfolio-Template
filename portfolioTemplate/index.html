@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="topNav">
+            <div id="logo" onclick="getHome()">Ömer</div>
+            <ion-icon id="darkMode" name="moon-outline"></ion-icon>
+        </div>
+    </header>
+    <section id="home">
+        <div class="sp-div">
+            <div style="font-weight:300; font-size: 13px;">
+                Hello. I'm
+            </div>
+            <h1 style="font-weight: 500;font-size: 20px;">
+                Ömer Faruk Sarıer
+            </h1>
+            <div class="hm-bt-tx">
+                Fullstack Developer
+            </div>
+
+        </div>
+
+        <div class="sp-div">
+            <button>
+                Dowland CV
+            </button>
+            <button onclick="getLocation()">
+                About me
+            </button>
+        </div>
+
+        <div id="image-div" class="sp-div">
+            <div class="icon-content">
+                <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-sar%C4%B1er-26-esk/" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://github.com/omerfaruksarier" target="_blank">
+                    <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="#" target="_blank">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </div>
+            <div class="sp-image">
+
+            </div>
+
+            <div class="scroll-content">
+                <ion-icon name="chevron-down-outline" id="scDown" onclick="scDown()"></ion-icon>
+                <div>Scroll down</div>
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <div class="sp-div">
+            <div class="hm-bt-tx">My Intro</div>
+            <h2 style="font-size: 20px;">About Me</h2>
+        </div>
+        <div class="about-div">
+            <img src="/img/pp-2.jpeg" alt="omerfaruksarier">
+
+            <div class="sp-abt-div">
+                <div class="box-content">
+                    <div>
+                        <ion-icon name="code-working-outline"></ion-icon>
+                        <p style="margin: 10px 0;">Experience</p>
+                        <p class="hm-bt-tx">3 Years Working</p>
+                    </div>
+                    <div>
+                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        <p style="margin: 10px 0;">Completed</p>
+                        <p class="hm-bt-tx">10 + Projects</p>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-whatsapp"></ion-icon>
+                        <p style="margin: 10px 0;">Support</p>
+                        <p class="hm-bt-tx">Online 24/7</p>
+                    </div>
+                </div>
+                <div>He graduated from Burdur Mehmet Akif Ersoy University
+                    Management Information Systems. He usually works on web
+                    programming. He has experience in web and desktop application
+                    developments because of his personal projects. Follows new
+                    software technologies, enterprises and innovations on the web.</div>
+                <button onclick="getContact()">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="sp-div">
+            <div class="hm-bt-tx">My abilities</div>
+            <h2 style="font-size: 20px;">My Experience</h2>
+        </div>
+        <div class="ex-box-content">
+            <div class="ex-box">
+                <div style="text-align: center;margin-bottom: 10px;">
+                    Frontend Developer
+                </div>
+                <div class="ex-dp-box">
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">HTML</div>
+                            <div class="ex-down-dp">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">JavaScript</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">CSS</div>
+                            <div class="ex-down-dp">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">Bootstrap</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">Git</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">Jquery</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box">
+                <div style="text-align: center;margin-bottom: 10px;">
+                    Backend Developer
+                </div>
+                <div class="ex-dp-box">
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">c#</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">MsSQL</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">.Net</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">SignalR</div>
+                            <div class="ex-down-dp">Intermediate</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">Selenium</div>
+                            <div class="ex-down-dp">Advanced</div>
+                        </div>
+                    </div>
+                    <div class="ex-dp">
+                        <div class="ex-icon">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        </div>
+                        <div>
+                            <div class="ex-up-dp">.Net Core</div>
+                            <div class="ex-down-dp">Basic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="sp-div">
+            <div class="hm-bt-tx">My Portfolio</div>
+            <h2 style="font-size: 20px;">Recent Works</h2>
+        </div>
+        <div class="rec-works-box">
+            <div class="ex-box-2">
+
+                <img src="/img/pinek.PNG">
+                <div class="rc-dc">
+                    <a href="https://pinek.online/" target="_blank" class="rc-dc-up">pinek.online</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('pinekModal').style.display ='block'">info
+                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box-2">
+
+                <img src="/img/fadima.PNG">
+                <div class="rc-dc">
+                    <a href="http://fadima.com.tr/" target="_blank" class="rc-dc-up">fadima.com.tr</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('fadimaModal').style.display ='block'">info <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box-2">
+
+                <img src="/img/seldanurdas.PNG">
+                <div class="rc-dc">
+                    <a href="https://seldanurdas.com/" target="_blank" class="rc-dc-up">seldanurdas.com</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('seldaModal').style.display ='block'">info <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box-2">
+
+                <img src="/img/esev.PNG">
+                <div class="rc-dc">
+                    <a href="https://esevvakfi.org/" target="_blank" class="rc-dc-up">esevvakfi.org</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('esevModal').style.display ='block'">info <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box-2">
+                <img src="/img/project.pinek.PNG">
+                <div class="rc-dc">
+                    <a href="https://project.pinek.online/" target="_blank" class="rc-dc-up">Responsive Template</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('responsiveTemplateModal').style.display ='block'">info <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="ex-box-2">
+                <img src="/img/consoleapp.PNG">
+                <div class="rc-dc">
+                    <a href="https://github.com/omerfaruksarier/ConsoleAppPullData" target="_blank"
+                        class="rc-dc-up">Pull Data Bot</a>
+                    <div class="rc-dc-down" onclick="document.getElementById('pullDataBotModal').style.display ='block'">info <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- pinek.online modal  -->
+        <div id="pinekModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal">
+                    <ion-icon class="modalClsIcon" name="close-outline"></ion-icon>
+                </div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">pinek.online</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Sed, dolor.
+                    </div>
+                    <br>
+                    <div class="modalUs">Used Technologies</div>
+                    <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fadima.com.tr modal -->
+        <div id="fadimaModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal">
+                    <ion-icon class="modalClsIcon" name="close-outline"></ion-icon>
+                </div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">fadima.com.tr</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Sed, dolor.
+                    </div>
+                    <br>
+                    <div class="modalUs">Used Technologies</div>
+                    <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- seldanurdas.com modal -->
+        <div id="seldaModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal">
+                    <ion-icon class="modalClsIcon" name="close-outline"></ion-icon>
+                </div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">seldanurdas.com</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Sed, dolor.
+                    </div>
+                    <br>
+                    <div class="modalUs">Used Technologies</div>
+                    <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- esevvakfi.org modal -->
+        <div id="esevModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal">
+                    <ion-icon class="modalClsIcon" name="close-outline"></ion-icon>
+                </div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">esevvakfi.org</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Sed, dolor.
+                    </div>
+                    <br>
+                    <div class="modalUs">Used Technologies</div>
+                    <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- responsiveTemplate modal -->
+        <div id="responsiveTemplateModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal">
+                    <ion-icon class="modalClsIcon" name="close-outline"></ion-icon>
+                </div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">responsive template</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor
+                        sit amet consectetur adipisicing elit. Sed, dolor.
+                    </div>
+                    <br>
+                    <div class="modalUs">Used Technologies</div>
+                    <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pullDataBot modal -->
+        <div id="pullDataBotModal" class="modal">
+            <div class="modal-content">
+                <div class="clsModal"><ion-icon class="modalClsIcon" name="close-outline"></ion-icon></div>
+                <div class="modalTextContent">
+                    <div class="modalHeader">pull data bot</div>
+                    <div class="modalText">
+                        <div>Description</div>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, dolor. </div>
+                        <br>
+                        <div class="modalUs">Used Technologies</div>
+                        <div class="modalBt">
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>c#</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>HTML</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>CSS</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>.Net Mvc</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>MsSQL</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>SignalR</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Jquery</div>
+                        </div>
+                        <div class="modalUsed">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            <div>Selenium</div>
+                        </div>
+                 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="sp-div">
+            <div class="hm-bt-tx">Get in touch</div>
+            <h2 style="font-size: 20px;">Contact Me</h2>
+        </div>
+        <div class="cnt-content">
+            <div class="link-box">
+                Talk to me
+                <div class="social-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div class="link-title">Email</div>
+                    <div class="link-description">sarier.omer.faruk@gmail.com</div>
+                    <a  href="mailto:sarier.omer.faruk@gmail.com" class="link-footer">write me <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="social-box">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                    <div class="link-title">Whatsapp</div>
+                    <div class="link-description">507-884-00-61</div>
+                    <a href="https://wa.me/905078840061" target="_blank" class="link-footer">write me <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+                <div class="social-box">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    <div class="link-title">Linkedin</div>
+                    <div class="link-description">ömer-faruk-sarıer-26-esk</div>
+                    <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-sar%C4%B1er-26-esk/" target="_blank" class="link-footer">write me <ion-icon name="arrow-forward-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="cnt-box">
+                <div style="margin:0 auto;">Write me your project</div>
+
+                <fieldset>
+                    <legend>Names</legend>
+                    <input placeholder="Insert your name">
+                </fieldset>
+                <fieldset>
+                    <legend>Mail</legend>
+                    <input placeholder="Insert your email">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project</legend>
+                    <textarea placeholder="Write your project"></textarea>
+                </fieldset>
+
+                <button>Send Message</button>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <h1>Ömer Faruk Sarıer</h1>
+        <div class="link-content">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+        </div>
+        <div class="icon-content">
+            <a href="https://www.linkedin.com/in/%C3%B6mer-faruk-sar%C4%B1er-26-esk/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://github.com/omerfaruksarier" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="#" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+        <div class="ft-cnt">
+            © Ömer Faruk Sarıer. All rigths reserved.
+        </div>
+    </footer>
+    <nav>
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="#home">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Home</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#about">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Profile</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#experience">
+                        <span class="icon">
+                            <ion-icon name="code-working-outline"></ion-icon>
+                        </span>
+                        <span class="text">Experience</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#projects">
+                        <span class="icon">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </span>
+                        <span class="text">Projects</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#contact">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contact</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+    </nav>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
